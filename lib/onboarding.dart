@@ -13,8 +13,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(horizontal: 30),
+        width: Get.width,
+        padding: EdgeInsets.symmetric(horizontal: Get.width * 0.08),
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -25,42 +25,44 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // SizedBox(height: Get.height * 0.1),
             const CircleAvatar(
-              radius: 50,
-              backgroundImage: NetworkImage(
-                'https://via.placeholder.com/150', // Replace with actual image URL
-              ),
+              radius: 70,
+              backgroundImage: AssetImage('assets/image/doc.png')
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: Get.height * 0.03),
             const Text(
               'DocTalk',
               style: TextStyle(
-                fontSize: 24,
+                fontSize: 26,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
+                fontFamily: 'Poppins',
               ),
             ),
-            const SizedBox(height: 5),
+            SizedBox(height: Get.height * 0.005),
             const Text(
               'Your AI Health Assistant',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 18,
                 color: Colors.white70,
+                fontFamily: 'Poppins',
               ),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: Get.height * 0.015),
             const Text(
               'Get instant medical advice and connect with healthcare professionals',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 14,
+                fontSize: 16,
                 color: Colors.white70,
+                fontFamily: 'Poppins',
               ),
             ),
-            const SizedBox(height: 30),
+            SizedBox(height: Get.height * 0.05),
             ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
-                minimumSize: const Size(double.infinity, 50),
+                minimumSize: Size(Get.width, Get.height * 0.06),
                 backgroundColor: Colors.white,
                 foregroundColor: Colors.black,
               ),
@@ -68,10 +70,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               label: const Text('Sign in with Google'),
               onPressed: () {},
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: Get.height * 0.015),
             OutlinedButton.icon(
               style: OutlinedButton.styleFrom(
-                minimumSize: const Size(double.infinity, 50),
+                minimumSize: Size(Get.width, Get.height * 0.06),
                 foregroundColor: Colors.white,
                 side: const BorderSide(color: Colors.white70),
               ),
@@ -79,10 +81,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               label: const Text('Sign in with Email'),
               onPressed: () {},
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: Get.height * 0.015),
             OutlinedButton.icon(
               style: OutlinedButton.styleFrom(
-                minimumSize: const Size(double.infinity, 50),
+                minimumSize: Size(Get.width, Get.height * 0.06),
                 foregroundColor: Colors.white,
                 side: const BorderSide(color: Colors.white70),
               ),
@@ -90,13 +92,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               label: const Text('Sign in with Phone'),
               onPressed: () {},
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: Get.height * 0.03),
             const Text(
               'By continuing, you agree to our Terms & Privacy Policy',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 12,
+                fontSize: 14,
                 color: Colors.white70,
+                fontFamily: 'Poppins',
               ),
             ),
           ],
