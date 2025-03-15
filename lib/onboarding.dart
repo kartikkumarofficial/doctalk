@@ -1,3 +1,4 @@
+import 'package:doctalk_ui/healthdashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -27,11 +28,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           children: [
             SizedBox(height: Get.height * 0.15),
              CircleAvatar(
-               radius: 100,
-               backgroundColor: Colors.white.withOpacity(1),
+               radius: 95,
+               backgroundColor: Colors.white.withOpacity(0.08),
                child: CircleAvatar(
                 radius: 78,
-                child: Image.asset('assets/image/doc.png'),
+                child: ClipOval(child: Image.asset('assets/images/doc.png',)),
                            ),
              ),
             SizedBox(height: Get.height * 0.03),
@@ -72,7 +73,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
               icon:  Icon(Icons.g_mobiledata),
               label:  Text('Sign in with Google'),
-              onPressed: () {},
+              onPressed: () {
+                Get.to(HealthDashboard());
+              },
             ),
             SizedBox(height: Get.height * 0.015),
             OutlinedButton.icon(
