@@ -12,7 +12,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(//
+      body: Container(
         width: Get.width,
         padding: EdgeInsets.symmetric(horizontal: Get.width * 0.08),
         decoration:  BoxDecoration(
