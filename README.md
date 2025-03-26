@@ -1,4 +1,4 @@
-# doctalk_ui
+# doctalk
 
 A new Flutter project.
 
