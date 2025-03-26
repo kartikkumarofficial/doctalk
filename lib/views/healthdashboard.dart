@@ -1,4 +1,4 @@
-import 'package:doctalk_ui/health_summary_swiper.dart';
+import 'package:doctalk_ui/widgets/health_summary_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:math';

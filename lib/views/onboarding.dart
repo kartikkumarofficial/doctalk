@@ -1,6 +1,8 @@
-import 'package:doctalk_ui/healthdashboard.dart';
+import 'package:doctalk_ui/views/healthdashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:doctalk_ui/auth/google_sign_in.dart';
 
 class OnboardingScreen extends StatefulWidget {
    OnboardingScreen({super.key});
@@ -74,7 +76,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               icon:  Icon(Icons.g_mobiledata),
               label:  Text('Sign in with Google'),
               onPressed: () {
-                Get.to(HealthDashboard());
+                signInWithGoogle();
+                // Get.to(HealthDashboard());
               },
             ),
             SizedBox(height: Get.height * 0.015),
@@ -86,7 +89,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
               icon:  Icon(Icons.email),
               label:  Text('Sign in with Email'),
-              onPressed: () {},
+              onPressed: () {
+                Get.to(HealthDashboard());
+              },
             ),
             SizedBox(height: Get.height * 0.015),
             OutlinedButton.icon(
