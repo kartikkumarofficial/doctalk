@@ -1,0 +1,2 @@
+C:/Users/Kartik/StudioProjects/doctalk_ui/android/app/.cxx/Debug/k2h542d5/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Kartik/StudioProjects/doctalk_ui/android/app/.cxx/Debug/k2h542d5/armeabi-v7a/CMakeFiles/rebuild_cache.dir
