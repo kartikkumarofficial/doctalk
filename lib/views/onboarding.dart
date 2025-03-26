@@ -1,3 +1,4 @@
+import 'package:doctalk_ui/services/auth_service.dart';
 import 'package:doctalk_ui/views/healthdashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -102,7 +103,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
               icon:  Icon(Icons.phone),
               label:  Text('Sign in with Phone'),
-              onPressed: () {},
+              onPressed: () {
+                signInWithPhone("123455226");
+              },
             ),
             SizedBox(height: Get.height * 0.03),
              Text(
