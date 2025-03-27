@@ -114,7 +114,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               style: TextStyle(
                 fontSize: 14,
                 color: Colors.white70,
-                fontFamily: 'Poppins',
+                fontFamily: 'Poppins',//
               ),
             ),
           ],
