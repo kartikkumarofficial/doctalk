@@ -39,9 +39,9 @@ class _SignupScreenState extends State<SignupScreen> {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF56ab2f), Color(0xFFA8E063)],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
+            colors: [Color(0xFF0F6BAE), Color(0xFF3AB28D)],
           ),
         ),
         child: Center(
@@ -50,11 +50,8 @@ class _SignupScreenState extends State<SignupScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  "assets/signup_sticker.png",
-                  height: 150,
-                ),
-                const SizedBox(height: 20),
+
+                // const SizedBox(height: 20),
                 const Text(
                   "Sign Up",
                   style: TextStyle(
