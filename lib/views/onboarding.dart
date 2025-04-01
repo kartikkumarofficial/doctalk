@@ -1,5 +1,6 @@
 import 'package:doctalk_ui/services/auth_service.dart';
 import 'package:doctalk_ui/views/healthdashboard.dart';
+import 'package:doctalk_ui/views/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -91,7 +92,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               icon:  Icon(Icons.email),
               label:  Text('Sign in with Email'),
               onPressed: () {
-                Get.to(HealthDashboard());
+                Get.to(SignupScreen());
               },
             ),
             SizedBox(height: Get.height * 0.015),
